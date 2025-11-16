@@ -1,6 +1,14 @@
-from geo import distance, area_of_triangle
+import geo.utils as utils
 
-print("{:.1f} {:.1f}".format(distance(0, 0, 3, 4), area_of_triangle(10, 5)))
+# calculate the length of hypotenuse(c) when a=3 and b=4
+a, b = 3, 4
+c = utils.pythagoras(a, b)
+print('c =', c)
+
+# calculate the area of circle with radius r = 10
+r = 10
+area = utils.circle(r)
+print('area =', area)
 
 
 
